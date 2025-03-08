@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    max-width: 1440px;
+    height: 90px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar h1::after {
+    content: " Thought";
+    color: blue;
+}
+
+.navbar i {
+    font-size: 24px;
+    color: lightblue;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    flex-grow: 1;
+}
+
+.navbar i {
+    margin-right: 15px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 60vh;
+    background: white;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    border-right: 1px solid #ddd;
+    z-index: 10;
+
+}
+
+.sidebar h2 {
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar h3 {
+    padding: 10px;
+    margin: 0;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.sidebar.closed {
+    left: -250px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    background: white;
+    color: black;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#toggleBtn {
+    position: absolute;
+    top: 90px;
+    left: 260px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#toggleBtn:hover {
+    background: #575757;
+}
+
+.sidebar.closed+#toggleBtn {
+    left: 10px;
+}
+
+.below-navabr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: sticky;
+}
+
+.below-navabr h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: blue;
+}
+
+.below-navabr button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.below-navabr button:hover {
+    background: darkblue;
+}
+
+.below-navabr div {
+    background: #ECEFF1;
+    /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.below-navabr h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.below-navabr p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 33px;
+    margin: 20px;
+    height: 600px;
+
+}
+
+.box>video {
+    width: 100%;
+}
+
+.heading {
+    border: 1px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* .thread {
+    width: 478px;
+    height: 40px;
+    top: 534px;
+    left: 747px;
+    border: 0.1px;
+} */
+
+.sub-thread {
+    display: flex;
+    background: #f8f8f8;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    width: 80%;
+    height: 60px;
+    border: none;
+    font-size: 14px;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    resize: both;
+
+}
+
+/* .textarea-item {
+    flex: 1;
+} */
+
+/* textarea::placeholder {
+    color: #a0a0a0;
+} */
+
+.thread-icons {
+    display: inline-flex;
+    padding: 5px;
+    margin: 10%;
+    font-size: large;
+
+}
+
+.sub-button {
+    background-color: blue;
+    color: white;
+}
+
+/* .summary {
+    display: flex;
+    background: #f8f8f8;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    width: 40%;
+    height: 60px;
+    border: none;
+    font-size: 14px;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+} */
+
+textarea {
+    background-color: #f0f0f0;
+    /* Light gray background */
+    border: none;
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    /* Darker text color */
+    resize: vertical;
+    /* Allow vertical resizing */
+    width: 150px;
+    /* Adjust width as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    font-family: sans-serif;
+    /* Fallback font */
+}
+
+textarea::placeholder {
+    color: #999;
+    /* Placeholder text color */
+}
+
+textarea:focus {
+    outline: none;
+    /* Remove default focus outline */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Slightly stronger shadow on focus */
+}
+
+.summary {
+    padding: 10px;
+}

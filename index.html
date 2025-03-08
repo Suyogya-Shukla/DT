@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Deep</h1>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-circle-user"></i>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <aside>
+            <div class="sidebar-item">
+                <h2>Journey Board <i class="fa-solid fa-arrow-left" id="toggleIcon"></i></h2>
+                <h3>Explore the world of Deep Thought</h3>
+                <ul>
+                    <li>Technical Project Management</li>
+                    <li>Thread Build</li>
+                    <li>Structure of Pointers</li>
+                    <li>4SA Method</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <button id="toggleBtn"><i class="fa-solid fa-bars"></i></button>
+
+    <div class="below-navabr">
+        <h2>Technical Project Management</h2>
+        <button>Submit</button>
+        <div>
+            <h3 id="task-title"></h3>
+            <p id="task-description"></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="box">
+            <div class="heading">
+                <h3 id="asset-title"></h3>
+            </div>
+            <div>
+                <p id="asset-description"></p>
+            </div>
+            <video id="asset-video" src="" controls></video>
+        </div>
+
+        <div class="box">
+            <div class="heading">
+                <h3 class="thread" id="asset2-title"></h3>
+            </div>
+            <p id="asset2-description"></p>
+            <div>
+                <h4><i class="fa-solid fa-chevron-up"></i>Thread A</h4>
+            </div>
+            <div class="sub-thread">
+                <label for="Sub Thread 1">Sub Thread 1</label>
+                <textarea class="textarea-item" name="Sub Thread 1" id="Sub Thread 1">Enter Text here</textarea>
+                <label for="Sub Interpretation 1">Sub Interpretation 1</label>
+                <textarea class="textarea-item" name="Sub Thread 1" id="Sub Interpretation 1">Enter Text here</textarea>
+            </div>
+
+            <div class="thread-icons">
+                <i class="fa-solid fa-lightbulb"></i>
+                <i class="fa-solid fa-comment"></i>
+                <i class="fa-solid fa-circle-question"></i>
+                <i class="fa-solid fa-seedling"></i>
+                <label for="options"></label>
+                <select id="options">
+                    <option value="" selected disabled>Select Category</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+
+                <label for="options"></label>
+                <select id="options">
+                    <option value="" selected disabled>Select process</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="sub-button">+ Sub-thread</button>
+                <div class="summary">
+                    <label for="Summary of Sub-thread">Summary of Sub-thread</label>
+                    <textarea name="Sub Thread 1" id="Summary of Sub-thread">Enter Text here</textarea>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="box">
+            <div class="heading">
+                <h3 id="asset3-title"></h3>
+            </div>
+            <p id="asset3-description"> </p>
+            <div>
+                <div class="">
+                    <label for="Title">Title</label>
+                    <textarea name="Sub Thread 1" id="Title">Enter Text here</textarea>
+                </div>
+                <div class="">
+                    <label for="Content">Content</label>
+                    <textarea name="Sub Thread 1" id="Content">Enter Text here</textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="heading">
+                <h3 id="asset4-title"></h3>
+            </div>
+            <p id="asset4-description"></p>
+            <div>
+                <h4><i class="fa-solid fa-chevron-up"></i>Introduction</h4>
+                <p>The 4SA Method, how to bring an idea into progress</p>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-chevron-up"></i>Thread A</h4>
+                <p>How are you going to develop your stratergy? Which method
+                    are you going to use to develop a stratergy? What if the
+                    project is lengthy?</p>
+            </div>
+            <div>
+                <h4>Example 1</h4>
+                <p>You have a concept, How will you put it into concept</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
